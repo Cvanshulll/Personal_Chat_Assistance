@@ -18,8 +18,8 @@ def index():
         query_result = web_request(query)
         query_resonse = scrape_data(query_result)
         print(query_resonse)
-        return render_template('Main.html', form=form, result=query_resonse)
-    return render_template('Main.html', form=form)
+        return render_template('/Main.html', form=form, result=query_resonse)
+    return render_template('/Main.html', form=form)
 
 
 if __name__ == '__main__':
